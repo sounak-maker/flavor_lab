@@ -1,18 +1,1 @@
-{
-  "AT 69": [
-    {"name": "CHICKEN MOMO", "price": 69},
-    {"name": "SANDWITCH", "price": 69}
-  ],
-  "AT 99": [
-    {"name": "CHOWMEIN COMBO", "price": 99},
-    {"name": "Paneer Butter Masala", "price": 180}
-  ],
-  "Snacks": [
-    {"name": "Veg Burger", "price": 80},
-    {"name": "French Fries", "price": 70}
-  ],
-  "Beverages": [
-    {"name": "Cold Coffee", "price": 60},
-    {"name": "Lemon Juice", "price": 40}
-  ]
-}
+
