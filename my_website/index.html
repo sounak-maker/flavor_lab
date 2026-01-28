@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FLAVOR LAB</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>F L A V O R&nbsp; L A B</h1>
+    <h2>STREET FOOD CENTER</h2>
+    <p>NOW AT YOUR FOOTSTEP</p>
+</header>
+
+<!-- MENU SECTION -->
+<section class="menu">
+    <h2>OUR MENU</h2>
+
+    <!-- ₹30 ITEMS -->
+    <h3>AT ₹30</h3>
+    <div class="item" onclick="addToCart('TEA & FRENCH FRIES',30)">
+        <span>TEA & FRENCH FRIES</span>
+        <span>₹30</span>
+    </div>
+    <div class="item" onclick="addToCart('COFFEE & MASALA CHAAT',30)">
+        <span>COFFEE & MASALA CHAAT</span>
+        <span>₹30</span>
+    </div>
+
+    <!-- ₹69 ITEMS -->
+    <h3>AT ₹69</h3>
+    <div class="item" onclick="addToCart('CHICKEN MOMO',69)">
+        <span>CHICKEN MOMO</span>
+        <span>₹69</span>
+    </div>
+    <div class="item" onclick="addToCart('SANDWICH',69)">
+        <span>SANDWICH</span>
+        <span>₹69</span>
+    </div>
+
+    <!-- ₹99 ITEMS -->
+    <h3>AT ₹99</h3>
+    <div class="item" onclick="addToCart('CHOWMEIN & CHILI CHICKEN COMBO',99)">
+        <span>CHOWMEIN & CHILI CHICKEN COMBO</span>
+        <span>₹99</span>
+    </div>
+
+    <!-- BEVERAGES -->
+    <h3>BEVERAGES</h3>
+    <div class="item" onclick="addToCart('LEMON JUICE',15)">
+        <span>LEMON JUICE</span>
+        <span>₹15</span>
+    </div>
+</section>
+
+<!-- CART SECTION -->
+<section class="cart">
+    <h2>🛒 Your Order</h2>
+
+    <p id="emptyCartMsg">No items added yet 🍽️</p>
+
+    <div id="cartItems"></div>
+
+    <!-- TABLE NUMBER -->
+    <input type="number" id="tableNo" placeholder="Enter Table Number" min="1">
+
+    <!-- STICKY FOOTER -->
+    <div class="cart-footer">
+        <div class="footer-total">
+            <span>Total</span>
+            <strong id="totalAmount">₹0</strong>
+        </div>
+        <button class="order-btn" onclick="placeOrder()">
+            Order on WhatsApp
+        </button>
+    </div>
+
+    <p class="eco-note"> Paperless • Eco-Friendly Menu</p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
